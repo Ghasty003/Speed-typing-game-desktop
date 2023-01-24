@@ -18,9 +18,22 @@ class Window {
     }
 
     public createWindow(): void {
-        app.whenReady().then(this.initailizedWindow)
+        app.whenReady().then(this.initailizedWindow);
+    }
+
+    public closeWindow() {
+        app.on("window-all-closed", () => {
+            if (process.platform != "darwin") {
+                app.quit();
+            }
+        })
+    }
+
+    public makeWindow(): void {
+        this.createWindow();
+        this.closeWindow();
     }
 }
 
 const window = new Window();
-window.createWindow()
+window.makeWindow();

@@ -15,6 +15,17 @@ class Window {
     createWindow() {
         electron_1.app.whenReady().then(this.initailizedWindow);
     }
+    closeWindow() {
+        electron_1.app.on("window-all-closed", () => {
+            if (process.platform != "darwin") {
+                electron_1.app.quit();
+            }
+        });
+    }
+    makeWindow() {
+        this.createWindow();
+        this.closeWindow();
+    }
 }
 const window = new Window();
-window.createWindow();
+window.makeWindow();
