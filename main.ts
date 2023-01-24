@@ -17,11 +17,11 @@ class Window {
         win.loadFile("index.html");
     }
 
-    public createWindow(): void {
+    private createWindow(): void {
         app.whenReady().then(this.initailizedWindow);
     }
 
-    public closeWindow() {
+    private closeWindow() {
         app.on("window-all-closed", () => {
             if (process.platform != "darwin") {
                 app.quit();
