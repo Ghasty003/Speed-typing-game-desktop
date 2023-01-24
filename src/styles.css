@@ -334,19 +334,4 @@
     text-align: center;
     color: white;
     word-spacing: 3px;
-  }
-  
-  @media screen and (max-width: 800px) {
-    .container-select {
-      height: 4.3em;
-    }
-    .select-container h1 {
-      font-size: 1.5em;
-    }
-    .time-container div {
-      width: 70%;
-    }
-    .input-container input {
-      width: 300px;
-    }
 }
