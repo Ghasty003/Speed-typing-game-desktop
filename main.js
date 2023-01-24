@@ -9,6 +9,7 @@ class Window {
             width: 800,
             height: 600
         });
+        win.loadFile("index.html");
     }
     createWindow() {
         electron_1.app.whenReady().then(this.initailizedWindow);
