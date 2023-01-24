@@ -7,7 +7,8 @@ class Window {
     initailizedWindow() {
         const win = new electron_1.BrowserWindow({
             width: 800,
-            height: 600
+            height: 600,
+            icon: "./assets/speed_icon.png"
         });
         win.loadFile("index.html");
     }

@@ -10,7 +10,8 @@ class Window {
     private initailizedWindow(): void {
         const win = new BrowserWindow({
             width: 800,
-            height: 600
+            height: 600,
+            icon: "./assets/speed_icon.png"
         })
 
         win.loadFile("index.html");
