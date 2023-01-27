@@ -1,2 +1,2 @@
 # Speed-typing-game-desktop
-Speed typing game desktop application
+Speed typing game desktop application.
